@@ -23,7 +23,6 @@ exports.init = function (app, options) {
         new RegExp("/psql((\/style.css)|(\/index.js))"),
         middleware,
         function (req, resp) {
-            console.log("psql-web-app asset:", req.params[0]);
             resp.sendFile(path.join(assetsDir, req.params[0]));
         });
 
