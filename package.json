@@ -1,0 +1,23 @@
+{
+    "name": "psqlapp",
+    "version": "0.0.1",
+    "description": "An Express app a bit like PSQL for Postgres.",
+    "main": "psqlweb.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nicferrier/psql-express-app"
+    },
+    "keywords": [
+        "postgresql",
+        "psql",
+        "express"
+    ],
+    "author": "Nic Ferrier, <ferriernic@gmail.com>",
+    "license": "ISC",
+    "dependencies": {
+        "multer": "^1.3.1"
+    }
+}
