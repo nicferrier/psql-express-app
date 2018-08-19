@@ -13,7 +13,7 @@ It looks like this:
 Just:
 
 ```
-npm install psqlapp
+npm install psql-web-app
 ```
 
 
@@ -23,7 +23,7 @@ In your Express app, you need something like:
 
 ```javascript
 const express = require("express");
-const psqlWebApp = require("psqlapp");
+const psqlWebApp = require("psql-web-app");
 const { Pool } = require('pg');
 
 const pool = new Pool(databaseConfig); // your own db connection details
