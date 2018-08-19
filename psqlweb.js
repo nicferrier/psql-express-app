@@ -9,7 +9,8 @@ const blankMiddleware = function (req, res, next) {
 };
 
 exports.init = function (app, options) {
-    middleware = options.middleware !== undefined ? options.middleware : blankMiddleware;
+    let opts = options !== undefined ? options : {};
+    let middleware = opts.middleware !== undefined ? opts.middleware : blankMiddleware;
 
     app.get(
         new RegExp("/psql(\/)*$"),
