@@ -10,9 +10,8 @@ function beep() {
 }
 
 function makeResultDisplay (sql, result) {
-    let d = document.body
-        .firstElementChild
-        .nextElementSibling
+    let d = document
+        .querySelector("div.textarea")
         .insertAdjacentElement("afterend",document.createElement("div"));
 
     let header = d.appendChild(document.createElement("div"));
