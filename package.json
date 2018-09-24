@@ -1,6 +1,6 @@
 {
     "name": "psql-web-app",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "An Express app a bit like PSQL for Postgres.",
     "main": "psqlweb.js",
     "scripts": {

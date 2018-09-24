@@ -122,8 +122,9 @@ function initSqlArea() {
             keyUpEvt.preventDefault();
         }
 
-        if (keyUpEvt.key == "t" && keyUpEvt.altKey) {
-            historyPointer = 0;
+        if (keyUpEvt.altKey
+            && (keyUpEvt.key == "t" || keyUpEvt.code == "KeyT")) {
+                historyPointer = 0;
             area.textContent = sqlShowTables;
             keyUpEvt.preventDefault();
         }
