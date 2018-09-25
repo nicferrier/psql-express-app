@@ -61,7 +61,8 @@ async function sendSql() {
     form.append("command", sql);
     let response = await fetch(document.location, {
         method: "POST",
-        body: form
+        body: form,
+        credentials : "same-origin"
     });
     if (response.status != 200) {
         console.log("sendSql did not succeed", response.status, response);
